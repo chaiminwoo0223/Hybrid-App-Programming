@@ -1,0 +1,44 @@
+<!-- CSS3 기본 선택자 정의하기 -->
+ 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>선택자 유형</title>
+        <style>
+            /* 전체 선택자 */
+            * { color: red; background-color: gray; }
+            /* 태그 선택자 */
+            span { color: blue; background-color: gray; }
+            /* 클래스 선택자 */
+            .class1 { color: green; background-color: orange; }
+            /* 아이디 선택자 */
+            #id1 { color: purple; background-color: pink; }
+            /* 자식 선택자 */
+            h1 > h2 { color: black; background-color: white; }
+            /* 자손 선택자 */
+            h3 h4 { color: brown; background-color: lightgray; }
+            /* 인접 형제 선택자 */
+            h5 + h6 { color: navy; background-color: lightblue; }
+        </style>
+    </head>
+    <body>
+        <div class="class1">
+            <h1 id="id1">h1 스타일</h1>
+            <h2>h2 스타일</h2>
+            <h3>h3 스타일</h3>
+            <h4>h4 스타일</h4>
+            <h5>h5 스타일</h5>
+            <h6>h6 스타일</h6>
+        </div>
+        <div>
+            <span>span 스타일</span>
+            <p>p 스타일</p>
+            <p class="class1">p 클래스 스타일</p>
+            <p id="id1">p 아이디 스타일</p>
+            <p class="class1" id="id1">p 클래스 아이디 스타일</p>
+            <p class="class1" id="id1" style="color: red;">p 인라인 스타일</p>
+            <p class="class1" id="id1" style="color: red; background-color: blue;">p 인라인 스타일</p>
+        </div>
+    </body>
+</html>

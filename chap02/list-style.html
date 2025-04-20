@@ -1,0 +1,38 @@
+<!-- 목록 스타일 속성 선언하기 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>목록 스타일 속성</title>
+        <style>
+            ul li { list-style-type: square; }
+            .class1 li { list-style-type: lower-roman; }
+            .class2 li { list-style-type: upper-alpha; }
+            .class3 li { list-style-type: lower-alpha; }
+            #id1, #id2 { list-style-position: inside; }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>AaBbCc 스타일1</li>
+            <ol class="class1">
+                <li>AaBbCc 스타일1-1</li>
+                <li>AaBbCc 스타일1-2</li>
+                <li>AaBbCc 스타일1-3</li>
+            </ol>
+            <li id="id1">AaBbCc 스타일2</li>
+            <ol class="class2">
+                <li>AaBbCc 스타일2-1</li>
+                <li>AaBbCc 스타일2-2</li>
+                <li>AaBbCc 스타일2-3</li>
+            </ol>
+            <li>AaBbCc 스타일3</li>
+            <ol id="id2" class="class3">
+                <li>AaBbCc 스타일3-1</li>
+                <li>AaBbCc 스타일3-2</li>
+                <li>AaBbCc 스타일3-3</li>
+            </ol>
+        </ul>
+    </body>
+</html>
