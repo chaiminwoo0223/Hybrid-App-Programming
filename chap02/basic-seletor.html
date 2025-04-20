@@ -6,39 +6,54 @@
         <meta charset="utf-8">
         <title>선택자 유형</title>
         <style>
-            /* 전체 선택자 */
-            * { color: red; background-color: gray; }
-            /* 태그 선택자 */
-            span { color: blue; background-color: gray; }
-            /* 클래스 선택자 */
-            .class1 { color: green; background-color: orange; }
-            /* 아이디 선택자 */
-            #id1 { color: purple; background-color: pink; }
-            /* 자식 선택자 */
-            h1 > h2 { color: black; background-color: white; }
-            /* 자손 선택자 */
-            h3 h4 { color: brown; background-color: lightgray; }
-            /* 인접 형제 선택자 */
-            h5 + h6 { color: navy; background-color: lightblue; }
+            * { margin: 5px; padding: 5px; }
+            #id1 { border: dashed red; }
+            .class2 { border: dashed blue; color: purple; }
+            span { font-weight: bold; }
+            #id1 > span { color: green; }
+            #id2 > span { color: deeppink; }
+            #id1 > ul > li { color: blue; }
+            #id1 > ul li { background-color: yellow; } 
+            #id1 li { border: double; }
+            #id2 > .class2 > h3 { color: red; }
+            #id2 > .class2 h4 { color: orange; }
+            h3 + h4 { text-align: center; }
+            h3 ~ h4 { background-color: gray; }
+            #id2 > .class2 h4 ~ h5 { border: double; }
         </style>
     </head>
     <body>
-        <div class="class1">
-            <h1 id="id1">h1 스타일</h1>
-            <h2>h2 스타일</h2>
-            <h3>h3 스타일</h3>
-            <h4>h4 스타일</h4>
-            <h5>h5 스타일</h5>
-            <h6>h6 스타일</h6>
+        <div id="id1">div 스타일1
+            <span>span 스타일1</span>
+            <span>span 스타일2</span>
+            <p>p 스타일1
+                <span>span 스타일3</span>
+            </p>
+            <ul class="class1">
+                <li>하늘</li>
+                <li>바다</li>
+                <li>은하</li>
+            </ul>
         </div>
-        <div>
-            <span>span 스타일</span>
-            <p>p 스타일</p>
-            <p class="class1">p 클래스 스타일</p>
-            <p id="id1">p 아이디 스타일</p>
-            <p class="class1" id="id1">p 클래스 아이디 스타일</p>
-            <p class="class1" id="id1" style="color: red;">p 인라인 스타일</p>
-            <p class="class1" id="id1" style="color: red; background-color: blue;">p 인라인 스타일</p>
+        <div id="id2">div 스타일2
+            <span>span 스타일4</span>
+            <span>span 스타일5</span>
+            <p>p 스타일2
+                <span>span 스타일6</span>
+            </p>
+            <div class="class2">
+                <h4>전나무</h4>
+                <h3>소나무</h3>
+                <h4>자작나무</h4>
+                <h5>단풍나무</h5>
+                <h4>느티나무</h4>
+                <h5>버즘나무</h5>
+                <h4>은행나무</h4>
+                <h5>사과나무</h5>
+                <h4>자두나무</h4>
+                <h5>복숭아나무</h5>
+                <h4>체리나무</h4>
+            </div>
         </div>
     </body>
 </html>
