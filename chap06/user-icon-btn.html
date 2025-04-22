@@ -1,4 +1,4 @@
-<!-- 버튼 생성하기 -->
+<!-- 사용자 정의 아이콘 버튼 생성하기 -->
 
 <!DOCTYPE html>
 <html>
@@ -9,16 +9,21 @@
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     </head>
+    <style>
+        .ui-icon-my-icon:after {
+            background: url(buttonicon1.png);
+            background-size: 22px 22px;
+        }
+    </style>
     <body>
         <div data-role="page">
             <div data-role="header">
                 <h1>header 영역</h1>
             </div>
             <div data-role="content">
-                <p>content 영역</p><br>
-                <a data-role="button" href="#">(1) a태그 버튼</a>
-                <button>(2) button태그 버튼</button>
-                <input type="button" value="(3) input태그 버튼">
+                <button data-icon="my-icon">사용자정의아이콘1</button>
+                <input type="button" data-icon="my-icon" value="사용자정의아이콘2">
+                <a href="#" data-role="button" data-icon="my-icon">사용자정의아이콘3</a>
             </div>
             <div data-role="footer" data-position="fixed">
                 <h4>footer 영역</h4>

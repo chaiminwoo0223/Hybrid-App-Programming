@@ -1,4 +1,4 @@
-<!-- 버튼 생성하기 -->
+<!-- 아이콘 전용 버튼 생성하기 -->
 
 <!DOCTYPE html>
 <html>
@@ -15,10 +15,13 @@
                 <h1>header 영역</h1>
             </div>
             <div data-role="content">
-                <p>content 영역</p><br>
-                <a data-role="button" href="#">(1) a태그 버튼</a>
-                <button>(2) button태그 버튼</button>
-                <input type="button" value="(3) input태그 버튼">
+                <button data-icon="delete" data-inline="true">취소</button>
+                <button data-icon="check">확인</button>
+                <button data-icon="delete" data-iconpos="notext" data-inline="true">취소</button>
+                <button data-icon="check" data-iconpos="notext" data-inline="true">확인</button>
+                <button data-role="none" data-icon="refresh" data-iconpos="notext" data-inline="true">4_새로고침버튼</button>
+                <input type="button" value="5_검색버튼" data-icon="search" data-iconpos="notext">
+                <a href="#" data-role="button" data-icon="info" data-iconpos="notext">6_정보버튼</a>
             </div>
             <div data-role="footer" data-position="fixed">
                 <h4>footer 영역</h4>

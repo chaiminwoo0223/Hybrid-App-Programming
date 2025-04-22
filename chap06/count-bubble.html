@@ -1,4 +1,4 @@
-<!-- 버튼 생성하기 -->
+<!-- 리스트뷰 카운트 버블 생성하기 -->
 
 <!DOCTYPE html>
 <html>
@@ -16,9 +16,12 @@
             </div>
             <div data-role="content">
                 <p>content 영역</p><br>
-                <a data-role="button" href="#">(1) a태그 버튼</a>
-                <button>(2) button태그 버튼</button>
-                <input type="button" value="(3) input태그 버튼">
+                <ul data-role="listview" data-inset="true" data-count-theme="a">
+                    <li><a href="#">리스트1</a><span class="ui-li-count">5</span></li>
+                    <li><a href="#">리스트2</a><span class="ui-li-count">17</span></li>
+                    <li><a href="#">리스트3</a><span class="ui-li-count">hot</span></li>
+                    <li><a href="#">리스트4</a><span class="ui-li-count">new</span></li>
+                </ul>
             </div>
             <div data-role="footer" data-position="fixed">
                 <h4>footer 영역</h4>
