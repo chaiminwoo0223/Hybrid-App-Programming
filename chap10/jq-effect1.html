@@ -1,0 +1,33 @@
+<!-- 제이쿼리 효과 적용하기1 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 효과</title>
+    <style>
+        div { margin: 5px; padding: 5px; border: solid thin gray; }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#hide').click(function() {
+                $('input[name="text1"]').hide(600);
+            });
+            $('#show').click(function() {
+                $('input[name="text1"]').show(1000);
+            });
+            $('#toggle').click(function() {
+                $('input[name="text1"]').toggle(2000);
+            });
+        });
+    </script>
+</head>
+<body>
+    show/hide/toggle 효과
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toggle">toggle</button><br/>
+    <div><input type="text" name="text1" value="입력하세요"/></div>
+</body>
+</html>

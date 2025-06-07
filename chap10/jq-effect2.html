@@ -1,0 +1,41 @@
+<!-- 제이쿼리 효과 적용하기2 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 효과</title>
+    <style>
+        div { margin: 5px; padding: 5px; border: solid thin gray; }
+        #img2 { display: none; }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fadeOut').click(function() {
+                $('#img1').fadeOut(2000, function() {
+                    $('#img2').fadeIn(100);
+                });
+            });
+            $('#fadeIn').click(function() {
+                $('#img2').fadeOut(2000, function() {
+                    $('#img1').fadeIn(100);
+                });
+            });
+            $('#fadeToggle').click(function() {
+                $('#img1').fadeToggle(1000);
+            });
+        });
+    </script>
+</head>
+<body>
+    fadeOut/fadeIn/fadeToggle 효과
+    <button id="fadeOut">fadeOut</button>
+    <button id="fadeIn">fadeIn</button>
+    <button id="fadeToggle">fadeToggle</button><br/>
+    <div>
+        <img id="img1" src="https://via.placeholder.com/100" alt="Placeholder Image 1" />
+        <img id="img2" src="https://via.placeholder.com/100/0000FF/FFFFFF?text=Image+2" alt="Placeholder Image 2" />
+    </div>
+</body>
+</html>
